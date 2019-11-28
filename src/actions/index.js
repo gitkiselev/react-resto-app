@@ -5,6 +5,21 @@ const menuLoaded = (newMenu) => {
     }
 }
 
+const menuRequested = () => {
+    return {
+        type: 'MENU_REQUESTED'
+    }
+}
+
+const appError = (error) => {
+    return {
+        type: 'APP_ERROR',
+        error: error
+    }
+}
+
 export {
-    menuLoaded
+    menuLoaded,
+    menuRequested,
+    appError
 }
