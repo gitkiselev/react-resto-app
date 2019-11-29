@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
-import {MainPage, CartPage, MenuItemPage} from '../pages';
+import {MainPage, CartPage} from '../pages';
 import AppHeader from '../app-header';
 
 
@@ -17,8 +17,6 @@ const App = () => {
                 <Route path='/cart'render={() => <CartPage/>} />
                 <Redirect from='/' to='/menu-items'/>
             </Switch>
-            <MainPage/>
-            <CartPage/>
         </div>
     )
 }
