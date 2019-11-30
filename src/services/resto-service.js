@@ -10,6 +10,6 @@ export default class RestoService {
 
     getMenuItems = async () => {
         return await this.getResource('/menu/')
-        //.then((j) => console.log(j));
+        
     }
 }

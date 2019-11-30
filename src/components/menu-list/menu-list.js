@@ -3,7 +3,7 @@ import MenuListItem from '../menu-list-item';
 import {connect} from 'react-redux';
 import './menu-list.scss';
 import WithRestoService from '../hoc';
-import {menuLoaded, menuRequested, appError, addedToCart} from '../../actions';
+import {menuLoaded, menuRequested, menuError, addedToCart} from '../../actions';
 import Spinner from '../spinner';
 import Error from  '../error';
 
@@ -49,7 +49,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
     menuLoaded,
     menuRequested,
-    appError,
+    menuError,
     addedToCart
 }
 

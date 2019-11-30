@@ -11,12 +11,11 @@ const menuRequested = () => {
     }
 }
 
-const appError = (error) => {
+const menuError = () => {
     return {
-        type: 'APP_ERROR',
-        error: error
-    }
-}
+      type: 'MENU_ERROR',
+    };
+  };
 
 const addedToCart = (id) => {
     return {
@@ -35,7 +34,7 @@ const deleteFromCart = (id) => {
 export {
     menuLoaded,
     menuRequested,
-    appError,
+    menuError,
     addedToCart,
     deleteFromCart
 }
